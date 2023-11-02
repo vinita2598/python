@@ -1,0 +1,282 @@
+﻿%%[
+
+Var @sourcerows, @sourcerow, @sourcetype, @srclistid, @jobid, @emailname, @dataextension, @message, @etid1, @hpcid, @creative_name, @emailtype, @sentdate, @shortsentdate, @emdate, @full_src, @source, @src2
+
+Set @source=source
+Set @full_src = ''
+Set @sourcetype = ''
+Set @srclistid = ''
+Set @emailaddress = emailaddr
+Set @jobid = jobid
+Set @emailname = emailname_
+Set @dataextension = _DataSourceName
+Set @message = ''
+Set @hpcid = 7924
+Set @creative_name = 'PAWTM7924R00.0001T000IO01'
+Set @emailtype = 'Production'
+Set @sentdate = SystemDateToLocalDate(Now())
+Set @shortsentdate = FormatDate(SystemDateToLocalDate(Now()), "mm/dd/yyyy")
+Set @emdate = FormatDate(SystemDateToLocalDate(Now()), "yyyy-mm-dd")
+Set @fromname = replyname
+Set @fromemail = replyemailaddress
+
+if not empty (@source) then
+Set @sourcerows = LookupRows("Sources and Daily Send Caps", "srcid", @source)
+
+if RowCount(@sourcerows) > 0 then
+Set @sourcerow = Row(@sourcerows,1)
+Set @full_src = Field(@sourcerow, "source")
+Set @sourcetype = Field(@sourcerow, "source_type")
+Set @srclistid = Field(@sourcerow, "srclistid")
+
+else
+Set @message = 'Source not found.'
+endif
+
+else
+Set @message = 'Blank source.'
+endif
+
+if @dataextension == 'Live Seeds' OR @dataextension == 'Shalini Seeds' then
+Set @message = @hpcid
+Set @hpcid = ''
+else
+endif
+
+]%%
+
+
+%%[
+Var @fname, @lname, @address1, @city, @state, @zip, @caryear, @carmake, @carmodel
+Set @fname = first_name
+Set @lname = last_name
+Set @address1 = address1
+Set @city = city
+Set @state = state
+Set @zip = zip
+Set @caryear = caryear
+Set @carmake = carmake
+Set @carmodel = carmodel
+
+]%%
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0102)file:///Users/erikagrezak/Downloads/10172023-JCC-2545-3rdParty-fix/10172023-jcc-2545-3rdparty-fix.html -->
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
+<link href="./10172023-jcc-2545-3rdparty-fix_files/css2" rel="stylesheet" type="text/css">
+<link href="./10172023-jcc-2545-3rdparty-fix_files/css2(1)" rel="stylesheet" type="text/css"><!--<![endif]-->
+<style>
+  * {
+   box-sizing: border-box;
+  }
+
+  body {
+   margin: 0;
+   padding: 0;
+  }
+
+  a[x-apple-data-detectors] {
+   color: inherit !important;
+   text-decoration: inherit !important;
+  }
+
+  #MessageViewBody a {
+   color: inherit;
+   text-decoration: none;
+  }
+
+  p {
+   line-height: inherit
+  }
+
+  .desktop_hide,
+  .desktop_hide table {
+   mso-hide: all;
+   display: none;
+   max-height: 0px;
+   overflow: hidden;
+  }
+
+  .image_block img+div {
+   display: none;
+  }
+
+  @media (max-width:620px) {
+
+   .row-1 .column-1 .block-2.image_block img,
+   .row-2 .column-1 .block-1.image_block img,
+   .row-2 .column-1 .block-2.image_block img,
+   .row-2 .column-1 .block-3.image_block img {
+    display: inline-block !important;
+   }
+
+   .mobile_hide {
+    display: none;
+   }
+
+   .row-content {
+    width: 100% !important;
+   }
+
+   .stack .column {
+    width: 100%;
+    display: block;
+   }
+
+   .mobile_hide {
+    min-height: 0;
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    font-size: 0px;
+   }
+
+   .desktop_hide,
+   .desktop_hide table {
+    display: table !important;
+    max-height: none !important;
+   }
+
+   .row-1 .column-1 .block-2.image_block .alignment,
+   .row-2 .column-1 .block-1.image_block .alignment,
+   .row-2 .column-1 .block-2.image_block .alignment,
+   .row-2 .column-1 .block-3.image_block .alignment {
+    text-align: left !important;
+   }
+
+   .row-3 .column-1 {
+    padding: 40px 10px !important;
+   }
+  }
+ </style>
+</head>
+<body style="margin: 0; background-color: #fff; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;"><br><div class="preheader" style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Lose up to  24 lbs in the  first 8 weeks!*</div>
+<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff;" width="100%">
+<tbody>
+<tr>
+<td>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody>
+<tr>
+<td>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 0; color: #000; width: 600px; margin: 0 auto;" width="600">
+<tbody>
+<tr>
+<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 30px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
+<table border="0" cellpadding="10" cellspacing="0" class="paragraph_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
+<tbody><tr>
+<td class="pad">
+<div style="color:#9b9a9a;direction:ltr;font-family:Arial, &#39;Helvetica Neue&#39;, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:center;mso-line-height-alt:18px;">
+<p style="margin: 0;">This is a 3rd Party Advertisement<br><a href="https://www.tederk.com/ZcY70z_9hPhdF-1Gyk7BpVU2pr5YKJ9I_Zt08-qS-dMBiJmX36DWRSDlP_Qcf3Ny-kDKJNcRs7ihcuUfyCVnoQ~~" rel="noopener" style="text-decoration: underline; color: #9b9a9a;" target="_blank">View as HTML</a></p>
+</div>
+</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" class="image_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody><tr>
+<td class="pad" style="padding-top:5px;width:100%;">
+<div align="center" class="alignment" style="line-height:10px"><a href="https://www.tederk.com/ZcY70z_9hPhdF-1Gyk7BpVU2pr5YKJ9I_Zt08-qS-dMBiJmX36DWRSDlP_Qcf3Ny-kDKJNcRs7ihcuUfyCVnoQ~~" class="offer_link" style="outline:none" tabindex="-1" target="_blank"><img alt="Jenny Craig" src="https://image.s1.sfmc-content.com/lib/fe2c11727164047b771d77/m/1/2726df91-7277-4d9d-967c-c5ec61e544ba.jpg" style="display: block; height: auto; border: 0; max-width: 200px; width: 100%;" title="Jenny Craig" width="200"></a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody>
+<tr>
+<td>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000; width: 600px; margin: 0 auto;" width="600">
+<tbody>
+<tr>
+<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody><tr>
+<td class="pad" style="width:100%;">
+<div align="center" class="alignment" style="line-height:10px"><a href="https://www.tederk.com/ZcY70z_9hPhdF-1Gyk7BpVU2pr5YKJ9I_Zt08-qS-dMBiJmX36DWRSDlP_Qcf3Ny-kDKJNcRs7ihcuUfyCVnoQ~~" class="offer_link" style="outline:none" tabindex="-1" target="_blank"><img alt="Claim Offer Now" src="https://image.s1.sfmc-content.com/lib/fe2c11727164047b771d77/m/1/c9819f67-4f5b-4aec-ba52-de5e01900f0e.jpg" style="display: block; height: auto; border: 0; max-width: 600px; width: 100%;" title="Claim Offer Now" width="600"></a></div>
+</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" class="image_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody><tr>
+<td class="pad" style="width:100%;">
+<div align="center" class="alignment" style="line-height:10px"><a href="https://www.tederk.com/ZcY70z_9hPhdF-1Gyk7BpVU2pr5YKJ9I_Zt08-qS-dMBiJmX36DWRSDlP_Qcf3Ny-kDKJNcRs7ihcuUfyCVnoQ~~" class="offer_link" style="outline:none" tabindex="-1" target="_blank"><img alt="Jenny Craig" src="https://image.s1.sfmc-content.com/lib/fe2c11727164047b771d77/m/1/5091c647-ed41-4e0e-8c1a-893feb4aed60.jpg" style="display: block; height: auto; border: 0; max-width: 600px; width: 100%;" title="Jenny Craig" width="600"></a></div>
+</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" class="image_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody><tr>
+<td class="pad" style="width:100%;">
+<div align="center" class="alignment" style="line-height:10px"><a href="https://www.tederk.com/ZcY70z_9hPhdF-1Gyk7BpVU2pr5YKJ9I_Zt08-qS-dMBiJmX36DWRSDlP_Qcf3Ny-kDKJNcRs7ihcuUfyCVnoQ~~" class="offer_link" style="outline:none" tabindex="-1" target="_blank"><img alt="Claim Offer Now" src="https://image.s1.sfmc-content.com/lib/fe2c11727164047b771d77/m/1/2349f45c-9eef-4293-ab0a-73ca3c80efd6.jpg" style="display: block; height: auto; border: 0; max-width: 600px; width: 100%;" title="Claim Offer Now" width="600"></a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+<tbody>
+<tr>
+<td>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 0; color: #000; background-color: #16384e; width: 600px; margin: 0 auto;" width="600">
+<tbody>
+<tr>
+<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 30px; padding-left: 20px; padding-right: 20px; padding-top: 30px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
+<table border="0" cellpadding="10" cellspacing="0" class="paragraph_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
+<tbody><tr>
+<td class="pad">
+<div style="color:#ffffff;direction:ltr;font-family:&#39;Prompt&#39;,&#39;Helvetica&#39;,&#39;Arial&#39;;font-size:10px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:18px;">
+<p style="margin: 0;">“First 8 weeks only. Average weight loss in a study was 22lbs for those who completed the program. Free Recharge bars with deliveries right to your door every 2 weeks. Cancel anytime. Call or see website for complete details. Free Delivery in Continental U.S. on first order only, or select pre-pay options to lock-in free delivery. JennyCraig.com<br>1100 Virginia Drive, Suite #175, Fort Washington, PA 19034 @ 2023 JC USA Inc.<br>Jenny Craig® is a registered trademark.</p>
+</div>
+</td>
+<br>
+</tr>
+
+
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+</tbody>
+</table>
+</td>
+</tr>
+
+</tbody>
+</table><!-- End -->
+ </tr>
+
+</table><p align=center>
+<font color="#898989" size="2">
+To unsubscribe please click <a href="https://opt-out-jennycraig.com/unsub/FVBRLELYhgYK5Hq0yu62YD4pvdlWtFUOmVidqhxMAkdDGW64HsXwGgDlvWR4EsjB" class="advertiser_unsub"> UNSUBSCRIBE</a> <br>
+1100 Virginia Drive, Suite #175, Fort Washington, PA 19034 </font>
+<br>
+<tr id="templateFooter">
+<td valign="top" class="footerContent" bgcolor="#FFFFFF" align="center" style="padding:15px 20px 20px 20px; line-height:25px; font-family:Helvetica, Arial, sans-serif; font-size:11px; color:#808080;">
+This is an email advertis&#101;ment.<br>
+<a href="%%profile_center_url%%" alias="Update Profile" style="color:#606060; text-decoration:underline;">Update Profile</a><span  style="color:#606060;"> or</span>
+<a href="%%unsub_center_url%%" alias="Unsubscribe" style="color:#606060; text-decoration:underline;"> One-Click Unsubscribe </a><br>
+<a style="color:#808080; text-decoration:none;">Contact us at <span  class="dba_addr">2803 Philadelphia Pike Suite B #409 Claymont, DE 19703</span></a>
+</td>
+</tr>
+</body>
+
+</html><custom name="opencounter" type="tracking"/>
